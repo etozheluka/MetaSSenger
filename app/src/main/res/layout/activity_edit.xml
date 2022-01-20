@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F8F4F4"
+    android:layout_height="match_parent"
+    tools:context=".InsideApp.EditActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="30dp"
+        app:errorEnabled="true"
+        android:hint="Enter your username">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textNoSuggestions" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="30dp"
+        app:errorEnabled="true"
+
+        android:hint="Enter your status">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editstatus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textNoSuggestions"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editstatus"
+        android:layout_marginTop="18dp"
+        android:layout_marginHorizontal="30dp"
+        app:errorEnabled="true"
+
+        android:hint="Enter your image URL">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editurl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textNoSuggestions" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/editsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editurl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="12"
+        android:text="edit"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Edit Info"
+        android:textColor="#304FFE"
+        android:textSize="40sp" />
+
+
+
+</RelativeLayout>

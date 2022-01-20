@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1002533345894",
+    "project_id": "metaplayer-6d01c",
+    "storage_bucket": "metaplayer-6d01c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002533345894:android:ac78ca7ddc308ff7a6eba7",
+        "android_client_info": {
+          "package_name": "com.example.lukametaplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002533345894-3ejv2e8jr1ivl6r62cahep0cuqa9qafa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1a7yxuke4wsmj6VGftVhWoJqEZvWgydw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002533345894-3ejv2e8jr1ivl6r62cahep0cuqa9qafa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
