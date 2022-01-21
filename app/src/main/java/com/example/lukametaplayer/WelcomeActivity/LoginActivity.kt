@@ -9,11 +9,13 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.view.isVisible
 import com.example.lukametaplayer.InsideApp.SecondActivity
 import com.example.lukametaplayer.MainActivity
 import com.example.lukametaplayer.R
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login.*
 
 
 private lateinit var email_login : TextInputLayout
@@ -29,18 +31,21 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
 
-        email_login = findViewById(R.id.email_login)
-        email_login1 = findViewById(R.id.email_login1)
-        password_login = findViewById(R.id.password_login)
-        password_login1 = findViewById(R.id.password_login1)
-        loginBtn = findViewById(R.id.loginBtn)
-        txtbtn2 = findViewById(R.id.txtbtn2)
+
 
         loginBtn.setOnClickListener{
             loginBtn()
         }
         txtbtn2.setOnClickListener {
             register()
+        }
+        switch1.setOnClickListener{
+            email_reset.isVisible = switch1.isChecked
+            resetBtn.isVisible = switch1.isChecked
+        }
+
+        resetBtn.setOnClickListener {
+            changepassword()
         }
 
     }
@@ -93,6 +98,19 @@ class LoginActivity : AppCompatActivity() {
     private fun register(){
         startActivity(Intent(this, RegisterActivity::class.java))
 
+    }
+    private fun changepassword() {
+        FirebaseAuth
+            .getInstance()
+            .sendPasswordResetEmail(email_reset1.text.toString())
+            .addOnCompleteListener {function ->
+                if (function.isSuccessful){
+                    Toast.makeText(this, "Check Your Email", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+                }
+
+            }
     }
 }
 

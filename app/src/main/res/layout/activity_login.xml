@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password_login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:backgroundTint="#AFAEAE"
         android:ems="12"
         android:text="login"
@@ -80,6 +80,50 @@
         android:layout_centerHorizontal="true"
         android:text="Don't have an account yet?  Sign Up"
         android:textSize="17sp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtbtn2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Password Reset" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_marginHorizontal="30dp"
+        android:visibility="invisible"
+        android:layout_marginTop="15dp"
+        android:hint="Email Adress"
+        app:errorEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_reset1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/email_reset"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"
+        android:backgroundTint="#AFAEAE"
+        android:ems="12"
+        android:text="Reset"
+        android:textColor="#000000" />
 
 </RelativeLayout>
 

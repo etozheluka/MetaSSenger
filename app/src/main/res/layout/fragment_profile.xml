@@ -25,7 +25,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="42dp"
         android:text="Guest"
-        android:textSize="22sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/imageProfile"
         app:layout_constraintTop_toTopOf="parent" />
 

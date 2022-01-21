@@ -121,7 +121,7 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(context, EditActivity::class.java))
         }
         edit2.setOnClickListener {
-            changepassword()
+            dialog()
         }
 
     }
@@ -144,6 +144,21 @@ class ProfileFragment : Fragment() {
     private fun logout(){
         startActivity(Intent(activity, LoginActivity::class.java))
         activity?.finish()
+
+    }
+
+
+    private fun dialog(){
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(resources.getString(R.string.title))
+            .setMessage(resources.getString(R.string.supporting_text))
+            .setNegativeButton(resources.getString(R.string.decline)) { dialog, which ->
+                // Respond to negative button press
+            }
+            .setPositiveButton(resources.getString(R.string.accept)) { dialog, which ->
+                changepassword()
+            }
+            .show()
 
     }
 
