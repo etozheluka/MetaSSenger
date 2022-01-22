@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F4F4"
     tools:context=".insideApp.ProfileFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -69,7 +68,7 @@
         android:layout_height="80sp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="64dp"
-        android:background="#FBFAFA"
+        android:background="@null"
         android:src="@drawable/icon_6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
@@ -80,7 +79,7 @@
         android:layout_height="80sp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="212dp"
-        android:background="#FBFAFA"
+        android:background="@null"
         android:src="@drawable/ic_settings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
@@ -91,7 +90,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:text="Edit Info"
-        android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
@@ -104,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="236dp"
         android:text="Change Password"
-        android:textColor="#000000"
+
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.21"

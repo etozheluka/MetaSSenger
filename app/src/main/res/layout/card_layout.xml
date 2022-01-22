@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    app:cardBackgroundColor="#FFFFFF"
     app:cardCornerRadius="14dp"
     app:cardElevation="3dp"
     app:contentPadding="4dp">
@@ -25,7 +24,6 @@
             android:layout_marginStart="35dp"
             android:layout_marginTop="10sp"
             android:text="Name"
-            android:textColor="@color/black"
             android:textSize="23sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageuser"

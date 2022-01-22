@@ -88,7 +88,7 @@ class ProfileFragment : Fragment() {
 
         logOutBtn.setOnClickListener{
             MaterialAlertDialogBuilder(view.context)
-                .setTitle(resources.getString(R.string.title))
+                .setTitle("Log Out")
                 .setMessage(resources.getString(R.string.supporting_text))
 
                 .setNegativeButton(resources.getString(R.string.decline)) { dialog, which ->
