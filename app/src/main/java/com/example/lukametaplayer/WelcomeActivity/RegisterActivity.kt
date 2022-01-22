@@ -9,7 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.lukametaplayer.InsideApp.EditActivity
-import com.example.lukametaplayer.InsideApp.SecondActivity
 import com.example.lukametaplayer.R
 import com.example.lukametaplayer.models.User
 import com.google.android.material.textfield.TextInputLayout
@@ -122,7 +121,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun login() {
-        startActivity(Intent(this,EditActivity::class.java))
+        startActivity(Intent(this, EditActivity::class.java))
         finish()
     }
 

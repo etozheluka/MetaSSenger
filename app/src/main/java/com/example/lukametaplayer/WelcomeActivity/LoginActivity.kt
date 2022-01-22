@@ -107,7 +107,7 @@ class LoginActivity : AppCompatActivity() {
                 if (function.isSuccessful){
                     Toast.makeText(this, "Check Your Email", Toast.LENGTH_SHORT).show()
                 }else{
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+                    email_reset.error = "This email doesn't exist"
                 }
 
             }

@@ -24,16 +24,37 @@
         </activity>
         <activity
             android:name=".InsideApp.EditActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+
+        </activity>
         <activity
             android:name=".InsideApp.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity.RegisterActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+
+        </activity>
         <activity
             android:name=".WelcomeActivity.LoginActivity"
-            android:exported="false" />
+            android:exported="false" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" >
