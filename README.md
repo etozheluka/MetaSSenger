@@ -37,6 +37,9 @@ ex. Luka Nikuradze - luka.nikuradze.0@btu.edu.ge
 
 ## Version History
 
+* 0.3 (22.01.2022)
+    * Added Dark Theme
+    * New App Logo
 * 0.2.1 (22.01.2022)
     * EditActivity update
     * removed some unused import statements
