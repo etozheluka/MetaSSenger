@@ -37,8 +37,9 @@ ex. Luka Nikuradze - luka.nikuradze.0@btu.edu.ge
 
 ## Version History
 
-*0.2.1 (22.01.2022)
+* 0.2.1 (22.01.2022)
     * EditActivity update
+    * removed some unused import statements
 * 0.2 (21.01.2022)
     * improved password recovery function
 * 0.1 (20.01.2022)
