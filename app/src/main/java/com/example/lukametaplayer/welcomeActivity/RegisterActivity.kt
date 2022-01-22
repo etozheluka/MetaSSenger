@@ -1,14 +1,13 @@
-package com.example.lukametaplayer.WelcomeActivity
+package com.example.lukametaplayer.welcomeActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.system.Os.getuid
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.lukametaplayer.InsideApp.EditActivity
+import com.example.lukametaplayer.insideApp.EditActivity
 import com.example.lukametaplayer.R
 import com.example.lukametaplayer.models.User
 import com.google.android.material.textfield.TextInputLayout
@@ -44,7 +43,7 @@ class RegisterActivity : AppCompatActivity() {
         txtbtn = findViewById(R.id.txtbtn)
 
 
-        txtbtn.setOnClickListener(){
+        txtbtn.setOnClickListener {
             login()
 
         }
@@ -79,7 +78,7 @@ class RegisterActivity : AppCompatActivity() {
         }
         if(password_repeat1.length()==0){
             password_repeat.error = "Password doesn't match"
-            return@signupBtn
+            return
         }else{
             password_repeat.error = null
         }
@@ -93,7 +92,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
         if(email_input1.length()==0){
-            return@signupBtn
+            return
 
         }else{
             FirebaseAuth

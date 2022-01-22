@@ -1,4 +1,4 @@
-package com.example.lukametaplayer.InsideApp
+package com.example.lukametaplayer.insideApp
 
 import android.content.Intent
 import android.os.Bundle
@@ -18,7 +18,6 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 

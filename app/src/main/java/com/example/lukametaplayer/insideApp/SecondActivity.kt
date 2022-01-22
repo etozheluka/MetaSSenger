@@ -1,4 +1,4 @@
-package com.example.lukametaplayer.InsideApp
+package com.example.lukametaplayer.insideApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

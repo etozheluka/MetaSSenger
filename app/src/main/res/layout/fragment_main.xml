@@ -6,7 +6,7 @@
     android:id="@+id/layout_root"
     android:layout_height="match_parent"
     android:background="#F8F4F4"
-    tools:context=".InsideApp.MainFragment">
+    tools:context=".insideApp.MainFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView

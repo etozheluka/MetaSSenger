@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.content.Intent
-import android.view.Menu
-import android.view.View
-import com.example.lukametaplayer.InsideApp.SecondActivity
-import com.example.lukametaplayer.WelcomeActivity.LoginActivity
-import com.example.lukametaplayer.WelcomeActivity.RegisterActivity
+import com.example.lukametaplayer.insideApp.SecondActivity
+import com.example.lukametaplayer.welcomeActivity.LoginActivity
+import com.example.lukametaplayer.welcomeActivity.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 
 

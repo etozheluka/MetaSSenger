@@ -23,7 +23,7 @@
 
         </activity>
         <activity
-            android:name=".InsideApp.EditActivity"
+            android:name=".insideApp.EditActivity"
             android:exported="false" >
 
             <meta-data
@@ -33,10 +33,10 @@
 
         </activity>
         <activity
-            android:name=".InsideApp.SecondActivity"
+            android:name=".insideApp.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity.RegisterActivity"
+            android:name=".welcomeActivity.RegisterActivity"
             android:exported="false" >
 
             <meta-data
@@ -46,7 +46,7 @@
 
         </activity>
         <activity
-            android:name=".WelcomeActivity.LoginActivity"
+            android:name=".welcomeActivity.LoginActivity"
             android:exported="false" >
 
             <meta-data

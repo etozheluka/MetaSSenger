@@ -1,29 +1,17 @@
-package com.example.lukametaplayer.WelcomeActivity
+package com.example.lukametaplayer.welcomeActivity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.isVisible
-import com.example.lukametaplayer.InsideApp.SecondActivity
-import com.example.lukametaplayer.MainActivity
+import com.example.lukametaplayer.insideApp.SecondActivity
 import com.example.lukametaplayer.R
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
 
-private lateinit var email_login : TextInputLayout
-private lateinit var password_login : TextInputLayout
-private lateinit var email_login1 : EditText
-private lateinit var password_login1 : EditText
-private lateinit var loginBtn : Button
-private lateinit var txtbtn2 : TextView
+
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,14 +54,14 @@ class LoginActivity : AppCompatActivity() {
 
         if(password_login1.length()==0){
             password_login.error = "Please enter your password"
-            return@loginBtn
+            return
 
         }else{
             password_login.error = null
         }
 
         if(email_login1.length()==0){
-            return@loginBtn
+            return
 
         }else{
             FirebaseAuth

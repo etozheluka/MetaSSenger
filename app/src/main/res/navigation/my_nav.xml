@@ -6,12 +6,12 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.lukametaplayer.InsideApp.MainFragment"
+        android:name="com.example.lukametaplayer.insideApp.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.lukametaplayer.InsideApp.ProfileFragment"
+        android:name="com.example.lukametaplayer.insideApp.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

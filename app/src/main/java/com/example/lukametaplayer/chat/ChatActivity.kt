@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.example.lukametaplayer.InsideApp.SecondActivity
+import com.example.lukametaplayer.insideApp.SecondActivity
 import com.example.lukametaplayer.R
 import com.example.lukametaplayer.models.ChatMessage
 import com.example.lukametaplayer.models.User
