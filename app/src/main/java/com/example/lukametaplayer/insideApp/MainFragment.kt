@@ -17,6 +17,7 @@ import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.card_layout.view.*
 import kotlinx.android.synthetic.main.fragment_main.*
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 
 private const val ARG_PARAM1 = "param1"
