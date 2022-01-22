@@ -30,7 +30,7 @@ private lateinit var txtProfile : TextView
 private lateinit var txtProfile2 : TextView
 private val db = FirebaseDatabase.getInstance().getReference("User")
 private val auth = FirebaseAuth.getInstance()
-
+private var status = 0
 
 class ProfileFragment : Fragment() {
     private var param1: String? = null
@@ -84,6 +84,12 @@ class ProfileFragment : Fragment() {
 
         })
 
+        online.setOnClickListener {
+
+            onlinecheck()
+
+        }
+
 
 
         logOutBtn.setOnClickListener{
@@ -112,6 +118,20 @@ class ProfileFragment : Fragment() {
             dialog()
         }
 
+    }
+
+    private fun onlinecheck() {
+
+
+        if (status == 0){
+            online.setText("Offline")
+            online.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.icon_3_2,0)
+            status = 1
+        }else{
+            online.setText("Online")
+            online.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.icon_3,0)
+            status = 0
+        }
     }
 
     private fun changepassword() {
