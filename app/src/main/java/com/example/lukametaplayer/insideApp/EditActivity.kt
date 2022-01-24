@@ -33,7 +33,7 @@ class EditActivity : AppCompatActivity() {
         name1 = findViewById(R.id.username1)
         name = findViewById(R.id.username)
 
-//TODO SDELAT AUTO IMIA STATUS I URL
+
         editsubmit.setOnClickListener {
 
 
