@@ -1,4 +1,4 @@
-# MesaSSenger
+# MetaSSenger
 
 ## Description
 This unremarkable messenger was created for fun and a good exam score.
