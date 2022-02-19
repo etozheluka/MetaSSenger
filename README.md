@@ -33,7 +33,7 @@ Project contains all the knowledge that I have received over the past month.
 
 ## Authors
 
-ex. Luka Nikuradze - luka.nikuradze.0@btu.edu.ge
+ex. Luka Nikuradze - luka.nikuradze.1@btu.edu.ge
 
 ## Version History
 
